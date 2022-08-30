@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 15.5px;
+}
+
+body{
+    background: rgb(102, 37, 74);
+}
+
+.calculator{
+    width: 250px;
+    position: absolute;
+    top: 33%;
+    right: 42.5%;
+    transform: translate(-43, -43);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+}
+
+table td{
+    display: inline-block;
+}
+
+.tcl {
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.ac{
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:rgb(255, 0, 68);
+    color: white;
+}
+
+.igual{
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:rgb(255, 0, 68);
+    color: white;
+}
+
+.especial{
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    background-color:rgb(255, 0, 68);
+    color: white;
+}
+
+.resultado{
+    text-align: right;
+    height: 100px;
+    font-size: 35px;
+    word-wrap: break-word;
+    background: black;
+    color: white;
+}
