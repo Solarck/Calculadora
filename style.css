@@ -68,7 +68,8 @@ table td{
     text-align: right;
     height: 100px;
     font-size: 35px;
+    border-radius: 18px;
     word-wrap: break-word;
-    background: black;
+    background:#1C1C1C;
     color: white;
 }
