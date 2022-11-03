@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="calculator-icon.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f09d96c042.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="" href="">
-    <title>Calculadora</title>
 </head>
+
 <body>
-    <div class="conteudo">
-        <div class="calculator"><table>
-            <p class="resultado" id="resultado"></p>
-            <tr>
-                <td><button class="ac" style="width: 106px;" onclick="clean()">AC</button></td>
-                <td><button class="tcl del" onclick="back()">
-                    <img class="backspace" src="icons/backspace.svg" alt="">
-                    <div class="icons">backspace</div>
-            </button>
-        </td>
-                <td><button class="tcl especial  divid" onclick="insert('/')">
-                    <img class="img" src="icons/divide.svg" alt="">
-                    <div class="icons"></div>
-                </button></td>
-            </tr>
-    
-            <tr>
-                <td><button class="tcl" onclick="insert('7')">7</button></td>
-                <td><button class="tcl" onclick="insert('8')">8</button></td>
-                <td><button class="tcl" onclick="insert('9')">9</button></td>
-                <td><button class="tcl especial" onclick="insert('*')">
-                    <img class="img" src="icons/x.svg" alt="">
-                    <div class="icons"></div>
-                </button></td>
-            </tr>
-    
-            <tr>
-                <td><button class="tcl" onclick="insert('4')">4</button></td>
-                <td><button class="tcl" onclick="insert('5')">5</button></td>
-                <td><button class="tcl" onclick="insert('6')">6</button></td>
-                <td><button class="tcl especial" onclick="insert('-')" style="font-size: 25px;">-</button></td>
-            </tr>
-    
-            <tr>
-                <td><button class="tcl" onclick="insert('1')">1</button></td>
-                <td><button class="tcl" onclick="insert('2')">2</button></td>
-                <td><button class="tcl" onclick="insert('3')">3</button></td>
-                <td><button class="tcl especial" onclick="insert('+')">
-                    <img class="img" src="icons/plus.svg" alt="">
-                    <div class="icons"></div>
-                </button></td>
-            </tr>
-    
-            <tr>
-                <td><button class="tcl" onclick="insert(0)">0</button></td>
-                <td><button class="tcl" onclick="insert('.')">.</button></td>
-                <td><button class=" igual " style="width: 106px;" onclick="confirm()">
-                    <img class="img" src="icons/equal.svg" alt="">
-                    <div class="icons"></div>
-                </button></td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="calculator">
+            <table>
+                <p class="result"></p>
+
+                <tr>
+                    <td><button onclick="clean()" class="button-ac" style="width: 140px;">AC</button></td>
+                    <td><button onclick="back()" class="button-delete"><i class="fa-solid fa-delete-left"></i></button>
+                    </td>
+                    <td><button onclick="insert('/')" class="button-especial"><i class="fa-solid fa-divide"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('7')" class="button">7</button></td>
+                    <td><button onclick="insert('8')" class="button">8</button></td>
+                    <td><button onclick="insert('9')" class="button">9</button></td>
+                    <td><button onclick="insert('*')" class="button-especial"><i class="fa-solid fa-x"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('4')" class="button">4</button></td>
+                    <td><button onclick="insert('5')" class="button">5</button></td>
+                    <td><button onclick="insert('6')" class="button">6</button></td>
+                    <td><button onclick="insert('-')" class="button-especial"><i class="fa-solid fa-minus"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('1')" class="button">1</button></td>
+                    <td><button onclick="insert('2')" class="button">2</button></td>
+                    <td><button onclick="insert('3')" class="button">3</button></td>
+                    <td><button onclick="insert('+')" class="button-especial"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('0')" class="button">0</button></td>
+                    <td><button onclick="insert('.')" class="button">.</button></td>
+                    <td><button onclick="confirm()" class="button-equal"><i class="fa-solid fa-equals"></i></button></td>
+            </table>
+        </div>
     </div>
-    </div>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/Solarck">Fernando Carlos</a></p>
+    </footer>
     <script src="calculator.js"></script>
 </body>
+
 </html>
