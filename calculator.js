@@ -20,16 +20,3 @@ function confirm(){
         document.getElementById('resultado').innerHTML=eval(resultado.innerHTML)
     }
 }
-
-let x = document.querySelector('#ponto')
-x.addEventListener('mouseenter, entrar')
-x.addEventListener('mouseout, sair')
-function entrar(){
-    x.style.background='#4F4F4F'
-}
-
-function sair(){
-    x.innerHTML
-    x.style.background='#1C1C1C'
-
-}
