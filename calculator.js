@@ -1,22 +1,25 @@
-let answer = document.querySelector('.result')
-
-function insert(valor){
-    answer.innerHTML+=valor
+let answer = document.querySelector('[data-resposta]')
+insert = (valor) => {
+    answer.innerHTML += valor
 }
 
-function clean(){
+clean = () => {
     answer.innerHTML = ' '
 }
 
-function back(){
-    if(answer.textContent){
-        let result = document.querySelector('.result').innerHTML
-        answer.innerHTML=result.substring(0, result.length -1)
+back = () => {
+    if (answer.textContent) {
+        let result = answer.innerHTML
+        answer.innerHTML = result.substring(0, result.length - 1)
     }
 }
 
-function confirm(){
-    if(answer.textContent!='Erro'){
-        document.querySelector('.result').innerHTML=eval(answer.innerHTML)
+confirm = () => {
+    if (answer.textContent) {
+        let dataResposta = document.querySelector('[data-resposta]').innerHTML = eval(answer.innerHTML)
+    }
+
+    else {
+        answer.innerHTML = ''
     }
 }

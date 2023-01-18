@@ -15,20 +15,20 @@
     <div class="container">
         <div class="calculator">
             <table>
-                <p class="result"></p>
+                <p class="result" data-resposta="resultado"></p>
 
                 <tr>
                     <td><button onclick="clean()" class="button-ac" style="width: 140px;">AC</button></td>
                     <td><button onclick="back()" class="button-delete"><i class="fa-solid fa-delete-left"></i></button>
                     </td>
-                    <td><button onclick="insert('/')" class="button-especial"><i class="fa-solid fa-divide"></i></button></td>
+                    <td><button onclick="insert('/')" class="button-especial" data-button-especial="operações"><i class="fa-solid fa-divide"></i></button></td>
                 </tr>
 
                 <tr>
                     <td><button onclick="insert('7')" class="button">7</button></td>
                     <td><button onclick="insert('8')" class="button">8</button></td>
                     <td><button onclick="insert('9')" class="button">9</button></td>
-                    <td><button onclick="insert('*')" class="button-especial"><i class="fa-solid fa-x"></i></button>
+                    <td><button onclick="insert('*')" class="button-especial" data-button-especial="btnOperações"><i class="fa-solid fa-x"></i></button>
                     </td>
                 </tr>
 
@@ -36,7 +36,7 @@
                     <td><button onclick="insert('4')" class="button">4</button></td>
                     <td><button onclick="insert('5')" class="button">5</button></td>
                     <td><button onclick="insert('6')" class="button">6</button></td>
-                    <td><button onclick="insert('-')" class="button-especial"><i class="fa-solid fa-minus"></i></button>
+                    <td><button onclick="insert('-')" class="button-especial" data-button-especial="operações"><i class="fa-solid fa-minus"></i></button>
                     </td>
                 </tr>
 
@@ -44,7 +44,7 @@
                     <td><button onclick="insert('1')" class="button">1</button></td>
                     <td><button onclick="insert('2')" class="button">2</button></td>
                     <td><button onclick="insert('3')" class="button">3</button></td>
-                    <td><button onclick="insert('+')" class="button-especial"><i class="fa-solid fa-plus"></i></button>
+                    <td><button onclick="insert('+')" class="button-especial" data-button-especial="operações"><i class="fa-solid fa-plus"></i></button>
                     </td>
                 </tr>
 
